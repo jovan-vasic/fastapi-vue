@@ -4,7 +4,7 @@ WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install -g @vue/cli@5.0.8 --force --loglevel verbose
+RUN npm install -g @vue/cli@5.0.8 --force
 
 COPY package.json .
 COPY package-lock.json .
